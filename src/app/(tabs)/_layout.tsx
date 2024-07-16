@@ -1,5 +1,10 @@
 import { Tabs } from "expo-router";
-import { FontAwesome } from "@expo/vector-icons";
+import {
+  FontAwesome,
+  AntDesign,
+  Foundation,
+  MaterialCommunityIcons,
+} from "@expo/vector-icons";
 
 export default function TabsLayout() {
   return (
@@ -11,7 +16,16 @@ export default function TabsLayout() {
         options={{
           headerTitle: "For You",
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="home" size={26} color={color} />
+            <Foundation name="home" size={26} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="search"
+        options={{
+          headerTitle: "Explore",
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="search1" size={26} color={color} />
           ),
         }}
       />
@@ -20,7 +34,16 @@ export default function TabsLayout() {
         options={{
           headerTitle: "Create Post",
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="plus" size={26} color={color} />
+            <FontAwesome name="plus-square-o" size={26} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="reels"
+        options={{
+          headerTitle: "Reels",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="play-speed" size={26} color={color} />
           ),
         }}
       />

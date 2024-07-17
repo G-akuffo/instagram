@@ -4,6 +4,7 @@ import {
   AntDesign,
   Foundation,
   MaterialCommunityIcons,
+  FontAwesome6,
 } from "@expo/vector-icons";
 
 export default function TabsLayout() {
@@ -52,7 +53,7 @@ export default function TabsLayout() {
         options={{
           headerTitle: "Profile",
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="user" size={26} color={color} />
+            <FontAwesome6 name="user-circle" size={26} color={color} />
           ),
         }}
       />

@@ -6,6 +6,7 @@ import {
   MaterialCommunityIcons,
   FontAwesome6,
 } from "@expo/vector-icons";
+import React from "react";
 
 export default function TabsLayout() {
   return (

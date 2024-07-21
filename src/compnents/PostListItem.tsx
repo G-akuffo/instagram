@@ -23,6 +23,9 @@ export default function PostListItem({ post }) {
         <Ionicons name="paper-plane-outline" size={24} color="black" />
         <Feather name="bookmark" size={24} color="black" className="ml-auto" />
       </View>
+      <View>
+        <Text className="p-2">{post.caption}</Text>
+      </View>
     </View>
   );
 }
